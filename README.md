@@ -86,6 +86,7 @@ The Entity Relationship Diagram illustrates the structure and relationships betw
 ![ERD](timetable-management-system/docs/ERD.png)
 
 ---
+## 👤 Author
 
 **Muhammad Danish Jawad**  
 [GitHub Profile](https://github.com/danishjawad)
