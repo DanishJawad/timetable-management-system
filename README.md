@@ -62,11 +62,17 @@ timetable-management-system/
 
 ## 🚀 How to Run
 
-1. Open `timetable-db-complete.sql` in SQL Server Management Studio  
-2. Execute the entire script or run step-by-step to create tables, views, procedures, and insert sample data  
-3. Use `SELECT` queries to retrieve data from views  
-4. Run stored procedures with sample input values to simulate timetable operations  
-
+1. Open SQL Server Management Studio
+2. Execute the following files in order:
+   - `1_schema.sql`
+   - `2_views.sql`
+   - `3_procedures.sql`
+   - `4_sample_data.sql`
+3. Use `SELECT` queries to view data from `CourseAllocationView`, `InstructorLoadView`, etc.
+4. Run procedures like:
+   ```sql
+   EXEC GetInstructorSchedule 'I001';
+   EXEC AvailableLabSlots 'L02', 'A';
 ---
 
 ## 📊 ERD Diagram
