@@ -73,6 +73,7 @@ timetable-management-system/
    SELECT * FROM OngoingTheorySessions;
    SELECT * FROM InstructorOfficeHours;
 4. Execute stored procedures with sample inputs:
+   ```sql
    EXEC GetInstructorSchedule 'I001';
    EXEC AvailableLabSlots 'L02', 'A';
    EXEC AssignCourseToInstructor 'I004', 'CS101';
