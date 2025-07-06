@@ -70,7 +70,7 @@ docs/
 
 The Entity Relationship Diagram illustrates the structure and relationships between entities like instructors, courses, and sessions.
 
-![ERD](docs/ERD.png)
+timetable-management-system/docs/ERD.png
 
 ---
 
