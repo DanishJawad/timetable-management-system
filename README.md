@@ -18,20 +18,20 @@ This project is a SQL-based academic scheduling system designed to manage and or
 
 timetable-management-system/
 ├── sql/
-│   ├── 1_schema.sql           -- Table definitions (schema, constraints)
-│   ├── 2_views.sql            -- View definitions
-│   ├── 3_procedures.sql       -- Stored procedures
-│   ├── 4_sample_data.sql      -- Sample data for testing
+│ ├── 1_schema.sql -- Table definitions (schema, constraints)
+│ ├── 2_views.sql -- View definitions
+│ ├── 3_procedures.sql -- Stored procedures
+│ ├── 4_sample_data.sql -- Sample data for testing
 │
 └── docs/
-   └── ERD.png                -- Entity-Relationship Diagram  
+└── ERD.png -- Entity-Relationship Diagram
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **SQL Server**  
-- **T-SQL**  
+- **SQL Server**
+- **T-SQL (Transact-SQL)** – Microsoft's procedural extension to SQL for control flow, error handling, variables, and stored procedures
 - **ERD Modeling**
 
 ---
@@ -62,18 +62,21 @@ timetable-management-system/
 
 ## 🚀 How to Run
 
-1. Open SQL Server Management Studio
+1. Open **SQL Server Management Studio**
 2. Execute the following files in order:
    - `1_schema.sql`
    - `2_views.sql`
    - `3_procedures.sql`
    - `4_sample_data.sql`
-3. Use `SELECT` queries to view data from `CourseAllocationView`, `InstructorLoadView`, etc.
-4. Run procedures like:
+3. Use `SELECT` queries to retrieve data from views like:
    ```sql
+   SELECT * FROM OngoingTheorySessions;
+   SELECT * FROM InstructorOfficeHours;
+4. Execute stored procedures with sample inputs:
    EXEC GetInstructorSchedule 'I001';
    EXEC AvailableLabSlots 'L02', 'A';
----
+   EXEC AssignCourseToInstructor 'I004', 'CS101';
+   EXEC InsertNewTheoryInstructor 'I006', 'Ayesha', 'Raza', 'B12', 'Lecturer';
 
 ## 📊 ERD Diagram
 
