@@ -16,12 +16,15 @@ This project is a SQL-based academic scheduling system designed to manage and or
 
 ## 🗂️ Folder Structure
 
-sql/
-└── timetable-db-complete.sql -- All table definitions, sample data, views, and stored procedures
-
-docs/
-└── ERD.png -- Entity-Relationship Diagram of the system
-
+timetable-management-system/
+├── sql/
+│   ├── 1_schema.sql           -- Table definitions (schema, constraints)
+│   ├── 2_views.sql            -- View definitions
+│   ├── 3_procedures.sql       -- Stored procedures
+│   ├── 4_sample_data.sql      -- Sample data for testing
+│
+└── docs/
+   └── ERD.png                -- Entity-Relationship Diagram  
 
 ---
 
